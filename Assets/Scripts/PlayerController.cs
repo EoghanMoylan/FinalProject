@@ -99,9 +99,13 @@ public class PlayerController : MonoBehaviour
 			rigidbody2D.AddForce(new Vector2 (0, jumpForce));
 		}
 		// Screen Shot with f12 key
-		if (Input.GetKey ("f12")) 
+		if (Input.GetKey("f12")) 
 		{
 			TakeScreenshot();
+		}
+		if (Input.GetKeyDown (KeyCode.Escape)) 
+		{
+			Application.Quit();
 		}
 	}
 	void Flip()
