@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
 	void TakeScreenshot()
 	{
 		// File path
-		string folderPath = Application.dataPath + "/screenshots/"; 
+		string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyPictures).ToString() + "/Gangesters & Stuff/screenshots/"; 
 		string fileName = "Screenshot";
 		string monthVar = System.DateTime.Now.ToString("_MMyyyy_hhmmss");
 		

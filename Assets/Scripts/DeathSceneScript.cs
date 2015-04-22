@@ -23,6 +23,8 @@ public class DeathSceneScript : MonoBehaviour {
 		labelStyle.fontStyle = FontStyle.Bold;
 		labelStyle.normal.textColor = Color.black;
 
+		labelStyle.alignment = TextAnchor.MiddleCenter;
+
 		GUI.Label (new Rect (Screen.width / 2 - 40, 350, 80, 30), "GAME OVER", labelStyle);
 
 		GUI.Label (new Rect(Screen.width / 2 - 40, 400, 80, 40), "Your Score Was: " + score, labelStyle);
